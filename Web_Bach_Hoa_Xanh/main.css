@@ -37,6 +37,7 @@
 
 .links li {
     margin: 0 15px;
+    position: relative;
 }
 
 .links a {
@@ -48,6 +49,46 @@
 
 .links a:hover {
     color: #ffc107;
+}
+
+/* Thiết kế khung của menu con */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Hiển thị ngay sát mép dưới menu cha */
+    left: 0;
+    background-color: #ffffff;
+    list-style: none;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: none; /* Mặc định ẩn đi */
+    z-index: 999;
+    border-radius: 0 0 4px 4px;
+    padding: 10px 0;
+}
+
+/* Các mục bên trong menu con */
+.dropdown-menu li {
+    margin: 0; /* Xóa margin cũ của li cha */
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: #333 !important; /* Đổi màu chữ sang tối để dễ đọc trên nền trắng */
+    padding: 10px 20px;
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Hiệu ứng khi di chuột vào từng mục con */
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #008848 !important; /* Màu xanh đặc trưng */
+}
+
+/* QUAN TRỌNG: Khi di chuột vào <li> cha, hiển thị .dropdown-menu con */
+.links li:hover .dropdown-menu {
+    display: block;
 }
 
 /* Bộ công cụ tìm kiếm bên phải */
