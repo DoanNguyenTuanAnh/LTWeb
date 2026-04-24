@@ -129,12 +129,12 @@
 
 .slide-track {
     display: flex;
-    width: calc(250px * 10); /* Chiều rộng = (chiều rộng 1 banner) * (tổng số lượng banner bao gồm bản sao) */
+    width: calc(650px * 10); /* Chiều rộng = (chiều rộng 1 banner) * (tổng số lượng banner bao gồm bản sao) */
     animation: scroll 20s linear infinite; /* Chạy liên tục trong 20 giây */
 }
 
 .slide {
-    width: 250px; /* Bạn có thể điều chỉnh kích thước banner tại đây */
+    width: 650px; /* Bạn có thể điều chỉnh kích thước banner tại đây */
     height: 150px;
     padding: 0 10px;
 }
